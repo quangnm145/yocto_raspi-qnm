@@ -39,3 +39,14 @@ II. Misc
 ========
 
 --- replace with specific information about the meta-quangnm-rpi4 layer ---
+
+
+MACHINE = "quangnm-rpi4-64"
+INIT_MANAGER = "systemd"
+LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
+
+ENABLE_UART = "1"
+ENABLE_KGDB = "1"
+RPI_USE_U_BOOT = "1"
+
+IMAGE_INSTALL:append = "hello"
