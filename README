@@ -39,3 +39,20 @@ II. Misc
 ========
 
 --- replace with specific information about the meta-qnm-raspi4 layer ---
+
+
+MACHINE = "raspberrypi4-64"
+INIT_MANAGER = "systemd"
+LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
+
+ENABLE_UART = "1"
+ENABLE_KGDB = "1"
+RPI_USE_U_BOOT = "1"
+ENABLE_PWM = "1"
+KEE_ALIVEO_SOUND = "0"
+RPI_AUDIO_SELECTION = "hdmi" 
+
+RPI_EXTRA_CONFIG = "dtoverlay=uart5"
+SERIAL_CONSOLES := "115200;ttyAMA5"
+
+IMAGE_INSTALL:append = " useradd-qnm"
