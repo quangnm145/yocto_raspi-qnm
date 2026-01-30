@@ -6,3 +6,5 @@ PASSWD = "\$5\$y9Aeg5ctwntRHo/g\$CAKtoTfQg7VPGfVAMGo5ZG/0GJLn3AD0JdoQ.i0dDFC"
 EXTRA_USERS_PARAMS = "\
     usermod -p '${PASSWD}' root; \
     "
+
+IMAGE_INSTALL:append = " qnm-banner"
