@@ -19,4 +19,13 @@ IMAGE_INSTALL:append = " \
     iproute2 \
     iputils \
     openssh \
+    bash \
+    tar \
+    xz \
+    procps \
+    coreutils \
+    curl \
+    libgcc \
+    libstdc++ \
+    libatomic \
 "
