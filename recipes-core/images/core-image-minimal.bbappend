@@ -7,4 +7,16 @@ EXTRA_USERS_PARAMS = "\
     usermod -p '${PASSWD}' root; \
     "
 
+#Set rootfs to 200MiB by default
+IMAGE_OVERHEAD_FACTOR ?= "1.0"
+IMAGE_ROOTFS_SIZE ?= "204800"
+IMAGE_ROOTFS_MAXSIZE = "2097152"
+
 IMAGE_INSTALL:append = " qnm-banner"
+
+IMAGE_INSTALL:append = " \
+    dhcpcd \
+    iproute2 \
+    iputils \
+    openssh \
+"
