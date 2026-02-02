@@ -1,0 +1,26 @@
+From 92bafd7ae95ceff822b5d2053b2c363563e93a51 Mon Sep 17 00:00:00 2001
+From: QuangNM <qnmhust.research@gmail.com>
+Date: Tue, 3 Feb 2026 00:05:54 +0700
+Subject: [PATCH] ssd1306-qmn-custom
+
+---
+ main.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/main.c b/main.c
+index d80dfb7..5837ff9 100644
+--- a/main.c
++++ b/main.c
+@@ -10,7 +10,8 @@
+ #include "ssd1306.h"
+ 
+ void print_help()
+-{
++{   
++    printf("QuangNM make patch\n\n");
+     printf("help message\n\n");
+     printf("-I\t\tinit oled (128x32 or 128x64 or 64x48)\n");
+     printf("-c\t\tclear (line number or all)\n");
+-- 
+2.34.1
+

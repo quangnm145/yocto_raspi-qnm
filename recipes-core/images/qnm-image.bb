@@ -48,4 +48,5 @@ IMAGE_INSTALL:append = " \
     kernel-modules \
     fbset \
     con2fbmap \
+    ssd1306 \
 "
