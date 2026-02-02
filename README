@@ -300,3 +300,6 @@ SERIAL_CONSOLES := "115200;ttyAMA5"
 
 IMAGE_INSTALL:append = " useradd-qnm"
 DISTRO = "qnm_distro"
+
+ENABLE_I2C = "1"
+KERNEL_MODULE_AUTOLOAD:rpi += "i2c-dev i2c-bcm2708"
